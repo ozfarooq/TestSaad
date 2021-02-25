@@ -1,0 +1,1783 @@
+{
+	"info": {
+		"_postman_id": "3cb98307-9e20-48b0-91d1-deced418682a",
+		"name": "NexHealth Staging Environment",
+		"description": "NexHealth Staging Environment API Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Appointment Categories",
+			"item": [
+				{
+					"name": "Get Appointment Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_categories?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_categories"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Appointment Categories",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Request JSON\r\n{\r\n  \"appointment_category\": {\r\n      \"name\": \"Physical\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_categories/219?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_categories",
+								"219"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Appointment Categories",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"appointment_category\":{\"name\": \"Appointment Category Test_Omer\",\"minutes\": 20}}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_categories?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_categories"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Appointment Categories",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_categories/218?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_categories",
+								"218"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointment Types",
+			"item": [
+				{
+					"name": "Get Appointment Types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_types?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_types"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Appointment Type",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"category_id\": 119,\r\n  \"parent_id\": 444,\r\n  \"parent_type\": \"User\"\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_types/5921?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_types",
+								"5921"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Appointment Types",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"appt_category_id\": 121,\r\n  \"parent_id\": 444,\r\n  \"parent_type\": \"User\"\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_types?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_types"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Appointment Types",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_types/5921?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_types",
+								"5921"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointments",
+			"item": [
+				{
+					"name": "Get Appointment",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointments?subdomain=enlive-sandbox&start=2017-01-01&end=2021-01-30&timezone=America/New_York&location_id=1&nex_only=true&created_since=2020-05-01&per_page=15&page=1",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointments"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "start",
+									"value": "2017-01-01"
+								},
+								{
+									"key": "end",
+									"value": "2021-01-30"
+								},
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								},
+								{
+									"key": "location_id",
+									"value": "1"
+								},
+								{
+									"key": "nex_only",
+									"value": "true"
+								},
+								{
+									"key": "created_since",
+									"value": "2020-05-01"
+								},
+								{
+									"key": "per_page",
+									"value": "15"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Appointment by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointments/6?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointments",
+								"6"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Appointment",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"appt\": {\r\n      \"confirmed\": true\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointments/5921?subdomain=enlive-sandbox&location_id=4",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointments",
+								"5921"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "location_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Appointment",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"appt\": {\r\n      \"patient_id\": 447,\r\n      \"provider_id\": 443,\r\n      \"start_time\": \"2021-02-27T05:00:00Z\",\r\n      \"end_time\": \"2021-02-27T05:30:00Z\",\r\n      \"note\": \"Routine cleaning\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointments?subdomain=enlive-sandbox&location_id=4",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointments"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "location_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patients",
+			"item": [
+				{
+					"name": "Get Patient",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/patients?subdomain=enlive-sandbox&location_id=148&per_page=1&page=1",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"patients"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "location_id",
+									"value": "148"
+								},
+								{
+									"key": "per_page",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patient by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/patients/1?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"patients",
+								"1"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Patient",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patient\": {\r\n        \"first_name\": \"Test1234\",\r\n        \"last_name\": \"Patient1234\",\r\n        \"email\": \"test@nexhealth.com\",\r\n        \"password\": \"12345678\",\r\n        \"password_confirmation\": \"12345678\",\r\n        \"bio\": {\r\n            \"date_of_birth\": \"1990-08-12\",\r\n            \"gender\": \"Male\",\r\n            \"race\": \"American\",\r\n            \"ssn\": 123456789,\r\n            \"insurance_name\": \"Progressive\",\r\n            \"street_address\": \"123 Law St\",\r\n            \"city\": \"New York\",\r\n            \"state\": \"NY\",\r\n            \"zip_code\": \"12345\",\r\n            \"phone_number\": \"2222222222\"\r\n        }\r\n  },\r\n  \"provider_ids\": [143759],\r\n  \"pcp_id\": 444\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/patients/143764?subdomain=enlive-sandbox&location_id=148",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"",
+								"patients",
+								"143764"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "location_id",
+									"value": "148"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Patient",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patient\": {\r\n      \"first_name\": \"Test2\",\r\n      \"last_name\": \"Patient2\",\r\n      \"email\": \"test2@nexhealth.com\",\r\n      \"bio\": {\r\n        \"date_of_birth\": \"1990-08-12\",\r\n        \"gender\": \"Male\",\r\n        \"race\": \"American\",\r\n        \"ssn\": 123456789,\r\n        \"insurance_name\": \"Progressive\",\r\n        \"street_address\": \"123 Law St\",\r\n        \"city\": \"New York\",\r\n        \"state\": \"NY\",\r\n        \"zip_code\": \"12345\",\r\n        \"phone_number\": \"2222222222\"\r\n      }\r\n    },\r\n    \"provider\": {\r\n      \"provider_id\": 143759\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/patients?subdomain=enlive-sandbox&location_id=148",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"patients"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "location_id",
+									"value": "148"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conversation",
+			"item": [
+				{
+					"name": "Get Conversations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/conversations?subdomain=enlive-sandbox&location_id=4&page=1&per_page=2&messages=1",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"conversations"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "location_id",
+									"value": "4"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "2"
+								},
+								{
+									"key": "messages",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Conversation by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/conversations/6?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"conversations",
+								"6"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Conversation",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"recipient_ids\": [\r\n    419\r\n  ],\r\n  \"message\": {\r\n      \"body\": \"Message51 from provider\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/conversations?subdomain=enlive-sandbox&assigned_user_id=4&location_id=4",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"conversations"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "assigned_user_id",
+									"value": "4"
+								},
+								{
+									"key": "location_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointment Slot",
+			"item": [
+				{
+					"name": "Get Appointment Slots",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"lids\":[1,2,3,4,5,6,7,8,9,10],\r\n\"pids\":[295, 377]\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_slots?subdomain=enlive-sandbox&start_date=2017-10-05&days=1",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_slots"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "start_date",
+									"value": "2017-10-05"
+								},
+								{
+									"key": "days",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Institution",
+			"item": [
+				{
+					"name": "Get Institution",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/institutions/1?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"institutions",
+								"1"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Institution by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"lids\":[1,2,3,4,5,6,7,8,9,10],\r\n\"pids\":[295, 377]\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/appointment_slots?subdomain=enlive-sandbox&start_date=2017-10-05&days=1",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"appointment_slots"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "start_date",
+									"value": "2017-10-05"
+								},
+								{
+									"key": "days",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Locations",
+			"item": [
+				{
+					"name": "Get Location",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/locations?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"",
+								"locations"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Locations by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"lids\":[1,2,3,4,5,6,7,8,9,10],\r\n\"pids\":[295, 377]\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/locations/148?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"locations",
+								"148"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Operatories",
+			"item": [
+				{
+					"name": "Get Operatories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/operatories?subdomain=enlive-sandbox&per_page=10&page=1&search_name=op1&location_id=100",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"operatories"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search_name",
+									"value": "op1"
+								},
+								{
+									"key": "location_id",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Operatories by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"lids\":[1,2,3,4,5,6,7,8,9,10],\r\n\"pids\":[295, 377]\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/operatories/2?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"operatories",
+								"2"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient Recalls",
+			"item": [
+				{
+					"name": "Get Patient Recalls",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/patient_recalls?subdomain=enlive-sandbox&location_id=148&page=1&per_page=10",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"patient_recalls"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "location_id",
+									"value": "148"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patient Recalls by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"lids\":[1,2,3,4,5,6,7,8,9,10],\r\n\"pids\":[295, 377]\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/patient_recalls/2?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"",
+								"patient_recalls",
+								"2"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Providers",
+			"item": [
+				{
+					"name": "Get Providers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/providers?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"providers"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Providers Recalls by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"lids\":[1,2,3,4,5,6,7,8,9,10],\r\n\"pids\":[295, 377]\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/providers/143759?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"providers",
+								"143759"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recall Type",
+			"item": [
+				{
+					"name": "Get Recall Type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/recall_types?subdomain=enlive-sandbox&location_id=148",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"recall_types"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								},
+								{
+									"key": "location_id",
+									"value": "148"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Recall Type by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "TsJ5272GUUwyjr0KCh4wtA",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.Nexhealth+json; version=2",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"lids\":[1,2,3,4,5,6,7,8,9,10],\r\n\"pids\":[295, 377]\r\n}"
+						},
+						"url": {
+							"raw": "http://app-7657.on-aptible.com/recall_types/6?subdomain=enlive-sandbox",
+							"protocol": "http",
+							"host": [
+								"app-7657",
+								"on-aptible",
+								"com"
+							],
+							"path": [
+								"recall_types",
+								"6"
+							],
+							"query": [
+								{
+									"key": "subdomain",
+									"value": "enlive-sandbox"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
